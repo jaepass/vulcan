@@ -1,0 +1,153 @@
+// Product Advisor styles
+.advisor-content {
+  position: relative;
+
+  .dark-blue-wave {
+    max-width: 1900px;
+    text-indent: -500px;
+    overflow: hidden;
+    height: 90px;
+    img {
+      max-width: initial;
+    }
+  }
+
+  .product-advise {
+    height: 680px;
+    background-color: $dark_blue;
+    padding: 20px;
+
+    h3 {
+      text-align: center;
+      margin: 0;
+      color: white;
+      font-size: 1.3em;
+    }
+    p {
+      text-align: center;
+      color: white;
+      padding-bottom: 20px;
+    }
+
+    .dropdown {
+      border-top: 2px solid #fff;
+      width: 100%;
+      padding: 20px;
+
+      label {
+        padding-bottom: 20px;
+        font-size: 1em;
+        color: white;
+      }
+      select {
+        margin-bottom: 20px;
+        border: 0;
+        outline: none;
+        width: 100%;
+        font-size: 1em;
+        height: 50px;
+        outline: 1px inset #fff;
+        outline-offset: -1px;
+      }
+    }
+    .submit-btn {
+      padding: 20px;
+
+      input[type="submit"] {
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 1.2em;
+        width: 100%;
+        background-color: $blue;
+        color: white;
+        height: 50px;
+        border: none;
+      }
+
+      input[type="submit"]:hover {
+        background-color: #fff;
+        color: $blue;
+        cursor: pointer;
+      }
+    }
+  }
+
+  @media (min-width: $phonePortrait) {
+    margin-top: 80px;
+  }
+
+  @media (min-width: $phoneLandscape) {
+    .dark-blue-wave {
+      position: absolute;
+      max-width: 100%;
+      max-height: 100%;
+      text-indent: 0;
+      top: -18%;
+      height: 130px;
+
+      img {
+        max-width: 100%;
+        height: 130px;
+      }
+    }
+  }
+
+  @media (min-width: $tabletPortrait) {
+    .dark-blue-wave {
+      top: -12%;
+
+      img {
+        max-width: 100%;
+        height: 90px;
+      }
+    }
+    .product-advise {
+      height: 580px;
+      p {
+        color: rgb(0, 183, 255);
+      }
+
+      .dropdown {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 20px;
+        .advise {
+          grid-column: span 2;
+        }
+      }
+    }
+  }
+
+  @media (min-width: $tabletLandscape) {
+    .dark-blue-wave {
+      top: -15%;
+
+      img {
+        width: 100%;
+      }
+    }
+    .product-advise {
+      padding: 40px;
+    }
+  }
+  @media (min-width: $desktopMedium) {
+    .dark-blue-wave {
+      top: -22%;
+      img {
+        width: 1980px;
+        height: 120px;
+      }
+    }
+    .product-advise {
+      height: 350px;
+      .dropdown {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-gap: 10px;
+        .advise {
+          grid-column: span 1;
+        }
+      }
+    }
+  }
+}

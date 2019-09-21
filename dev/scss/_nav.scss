@@ -1,0 +1,88 @@
+// Main Navigation styles
+nav {
+  padding: 0 15px;
+  $height: 40px;
+  position: absolute;
+  top: 100%;
+  left: 0%;
+  width: 100%;
+  margin: 0 auto;
+  background-color: $nav-color;
+  z-index: 1;
+  transform: scale(0);
+
+  nav.activated {
+    transition: all 0.3s ease-out;
+  }
+
+  .show & {
+    transform: scale(1);
+  }
+  ul {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    list-style: none;
+    line-height: $height;
+  }
+
+  li {
+    margin-top: 20px;
+    color: white;
+    #{$link-hover-selector} {
+      background-color: $blue;
+      border: none;
+    }
+    width: 100%;
+  }
+  a {
+    font-size: 15px;
+    padding: 20px;
+    color: white;
+    text-decoration: none;
+  }
+}
+@media (min-width: $tabletPortrait) {
+  nav {
+    $height: 40px;
+    top: 0%;
+    max-width: 800px;
+    margin: 0 auto;
+    transform: scale(1);
+    position: relative;
+    padding: 0;
+
+    ul {
+      @include flex-layout-row;
+      list-style: none;
+      color: black;
+      text-align: center;
+      font-size: 1em;
+      text-decoration: none;
+      outline: none;
+    }
+    li {
+      line-height: $height;
+      margin-top: 0;
+      flex: 1;
+      cursor: pointer;
+      // padding: 16px;
+    }
+    li:nth-last-child(-n + 2) {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: $desktopMedium) {
+  nav {
+    $height: 40px;
+    max-width: 1000px;
+
+    li {
+      font-size: 1em;
+      line-height: $height;
+      padding: 15px;
+    }
+  }
+}

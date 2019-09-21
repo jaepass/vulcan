@@ -1,0 +1,17 @@
+// Header logo styles
+.logo {
+  max-width: 170px;
+  margin-right: 40px;
+  margin-top: 13px;
+
+  @media (min-width: $tabletPortrait) {
+    margin-top: 20px;
+    max-width: 130px;
+    margin-bottom: 30px;
+  }
+
+  @media (min-width: $desktopMedium) {
+    max-width: 250px;
+    margin-bottom: 40px;
+  }
+}

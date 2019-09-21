@@ -1,0 +1,71 @@
+// FONT STYLES
+
+// Font Variables
+$header-type: "Roboto Condensed", sans-serif;
+$body-type: "Roboto", sans-serif;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+nav {
+  font-family: $header-type;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 60px;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 50px;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 45px;
+  font-weight: 700;
+}
+
+h4 {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+h5 {
+  font-size: 22px;
+  font-weight: 400;
+}
+
+label {
+  font-family: $header-type;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+p,
+button,
+input,
+a {
+  font-family: $body-type;
+  font-weight: 400;
+}
+
+p,
+a,
+input {
+  font-size: 18px;
+}
+
+button {
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  button {
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+}

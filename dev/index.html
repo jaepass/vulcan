@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/ico" href="images/favicon.ico" />
+    <title>Home</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
+
+    <!-- *** IMPORTANT *** PUT LINKS TO GOOGLE FONTS HERE. DO NOT PUT THEM INSIDE THE build:css comments -->
+    <!-- Put Google Fonts Here -->
+    <style>
+      @import url("https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700|Roboto:400,400i,500,700&display=swap");
+    </style>
+    <!-- end Google Fonts -->
+    <!-- *** IMPORTANT *** DO NOT DELETE OR EDIT THE NEXT THREE LINES OF CODE - THEY ARE IMPORTANT FOR THE GULP BUILD PROCESS. SEE YOUR INSTRUCTOR FIRST IF YOU WANT TO EDIT OR DELETE THESE LINES -->
+    <!-- build:css styles/styles.min.css -->
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css" crossorigin="anonymous" />
+
+    <!-- endbuild -->
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <header>
+        <div class="banner">
+          <div class="banner-slider">
+            <div class="slider-img" id="slider-img">
+              <img src="images/header-slider-img-01.jpg" alt="banner-01" />
+            </div>
+            <div class="slider-img" id="slider-img">
+              <img src="images/header-slider-img-02.jpg" alt="banner-02" />
+            </div>
+            <div class="slider-img" id="slider-img">
+              <img src="images/header-slider-img-03.jpg" alt="banner-03" />
+            </div>
+          </div>
+          <h1>
+            We design and fabricate indestructible wastewater screens. Enough
+            said.
+          </h1>
+          <div class="buttons">
+            <button type="button">View Products</button>
+            <button>View Services</button>
+          </div>
+
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+          <div class="dot-row">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+          </div>
+          <!--End circle dots-->
+        </div>
+        <br />
+        <!--End banner slider-->
+
+        <div class="header-contents">
+          <h5><span>Install Map </span> <span>Product Literature</span></h5>
+          <a href="index.html">
+            <img src="images/logo-white-vulcan.svg" alt="Vulcan logo" class="logo" />
+          </a>
+          <h5>
+            <img src="images/phone.svg" alt="Call image" class='icons'> <span>+1 712-642-2755</span>
+            <img src="images/email.svg" alt="Email image" class='icons'> <span>Contact Us</span>
+          </h5>
+
+          <button id="menu-btn" class="menu-btn">
+            <span class="button-content">
+              <span class="text">Menu</span>
+              <span class="bar"></span>
+            </span>
+          </button>
+          <!--End of menu button-->
+
+          <!-- Nav start -->
+          <nav id="main-navigation">
+            <ul>
+              <li><a href="#0">About</a></li>
+              <li><a href="#0"> Products</a></li>
+              <li><a href="#0">Services</a></li>
+              <li><a href="#0">Parts</a></li>
+              <li><a href="#0">News</a></li>
+              <li><a href="#0">Contact</a></li>
+              <li><a href="#0">Installation Map</a></li>
+              <li><a href="#0">Product Literature</a></li>
+            </ul>
+          </nav>
+          <!--End of main nav-->
+        </div>
+
+        <!-- End Banner -->
+      </header>
+      <!--End of header-->
+
+      <main>
+        <!-- Products Feature part -->
+        <section class="products-content">
+          <div class="white-wave">
+            <img src="images/wave-white.png" alt="White wave" />
+          </div>
+
+          <div class="heading">
+            <h3>Customize per order</h3>
+            <p>
+              Just as no two treatment plants are the same, no two of our
+              screening, grit handling or sludge thickening products are either.
+              We’ll help determine exactly what you need.
+            </p>
+          </div>
+
+          <!-- Product 1 -->
+          <div class="products-list">
+            <article>
+              <div class="product">
+                <img src="images/machine-01-300x274.png" alt="screening machine" srcset="
+                    images/machine-01-300x274.png 320w,
+                    images/machine-01-768x702.png 480w,
+                    images/machine-01-912x834.png 900w
+                  " />
+                <h4>Screening</h4>
+                <a href="#">View Selection</a>
+              </div>
+              <hr />
+            </article>
+
+            <!-- Product 2 -->
+            <article>
+              <div class="product">
+                <img src="images/machine-02-300x274.png" alt="Screening handling machine" srcset="
+                    images/machine-02-300x274.png 320w,
+                    images/machine-02-768x702.png 480w,
+                    images/machine-02-912x834.png 900w
+                  " />
+                <h4>Screenings<br />Handling</h4>
+                <a href="#">View Selection</a>
+              </div>
+              <hr />
+            </article>
+
+            <!-- Product 3 -->
+            <article>
+              <div class="product">
+                <img src="images/machine-03-300x274.png" alt="Grit Handling Machine" srcset="
+                    images/machine-03-300x274.png 320w,
+                    images/machine-03-768x702.png 480w,
+                    images/machine-03-912x834.png 900w
+                  " />
+                <h4>Grit<br />Handling</h4>
+                <a href="#">View Selection</a>
+              </div>
+              <hr />
+            </article>
+
+            <!-- Product 4 -->
+            <article>
+              <div class="product">
+                <img src="images/machine-04-300x274.png" alt="Sludge thickening machine" srcset="
+                    images/machine-04-300x274.png 320w,
+                    images/machine-04-768x702.png 480w,
+                    images/machine-04-912x834.png 900w
+                  " />
+                <h4>Sludge<br />Thickening</h4>
+                <a href="#">View Selection</a>
+              </div>
+              <!-- <hr /> -->
+            </article>
+          </div>
+          <!--End of products list-->
+        </section>
+        <!--End of products-content section-->
+
+        <section class="advisor-content">
+          <div class="dark-blue-wave">
+            <img src="images/wave-blue-dark.png" alt="Dark blue wave" />
+          </div>
+          <div class="product-advise">
+            <h3>Product Advisor</h3>
+            <p>Find your project’s perfect fit.</p>
+
+            <form action="/" method="POST">
+              <div class="dropdown">
+                <article class="advise advise-01">
+                  <label for="advise-01">Product Type</label>
+                  <select name="advise-01" id="advise-01">
+                    <option value="Select">Select</option>
+                    <option value="lorem">Lorem</option>
+                    <option value="ipsum">Ipsum</option>
+                  </select>
+                </article>
+
+                <article class="advise advise-02">
+                  <label for="advise-01">Screen Location</label>
+                  <select name="advise-02" id="advise-02" disabled>
+                    <option value="Select">Select</option>
+                    <option value="lorem">Lorem</option>
+                    <option value="ipsum">Ipsum</option>
+                  </select>
+                </article>
+
+                <article class="advise advise-03">
+                  <label for="advise-01">Flow Type</label>
+                  <select name="advise-03" id="advise-03" disabled>
+                    <option value="Select">Select</option>
+                    <option value="lorem">Lorem</option>
+                    <option value="ipsum">Ipsum</option>
+                  </select>
+                </article>
+
+                <article class="advise advise-04">
+                  <label for="advise-01">Channel Depth</label>
+                  <select name="advise-04" id="advise-04" disabled>
+                    <option value="Select">Select</option>
+                    <option value="lorem">Lorem</option>
+                    <option value="ipsum">Ipsum</option>
+                  </select>
+                </article>
+
+                <article class="advise advise-05">
+                  <label for="advise-01">Channel Width</label>
+                  <select name="advise-05" id="advise-05" disabled>
+                    <option value="Select">Select</option>
+                    <option value="lorem">Lorem</option>
+                    <option value="ipsum">Ipsum</option>
+                  </select>
+                </article>
+              </div>
+
+              <div class="submit-btn">
+                <a href="#"><input type="submit" value="Find My Product" /></a>
+              </div>
+            </form>
+
+            <!--End of advisor dropdown form-->
+          </div>
+
+          <!--End of product-advise-->
+        </section>
+        <!--End of advisor-content section-->
+
+        <section class="about-content">
+          <article>
+            <h2>Delivering clean safe water since 1975. Refreshing indeed.</h2>
+            <p>
+              Vulcan wastewater screening equipment has played a vital role in
+              protecting the water supply of more than 900 cities and
+              communities throughout the world.
+            </p>
+            <button>About Us</button>
+          </article>
+        </section>
+        <!--End of about-content section-->
+
+        <!-- Media Section -->
+        <section class="media">
+          <div class="video">
+            <iframe src="https://player.vimeo.com/video/183929811" frameborder="0" allow="autoplay; fullscreen"
+              allowfullscreen></iframe>
+          </div>
+          <script src="https://player.vimeo.com/api/player.js"></script>
+        </section>
+        <!--End of media section-->
+
+        <section class="sign-up">
+          <form action="/" method="POST">
+            <div class="search-group">
+              <label for="search-bar">Stay in the know. Sign up for our newsletter.</label>
+              <input type="email" name="email" id="email" placeholder="Enter your Email" />
+
+              <input type="submit" value="SUBMIT" class="submit-btn" />
+            </div>
+          </form>
+          <!--End of sign-up form-->
+        </section>
+        <!--End of sign-up section-->
+
+        <section class="map-location">
+          <article>
+            <div class="box map">
+              <h3>Installed in a city near you</h3>
+              <button type="button">find a vulcan install</button>
+            </div>
+          </article>
+
+          <article>
+            <div class="box location">
+              <h3>Ready to spec Vulcan for your project</h3>
+              <button type="button">contact us</button>
+            </div>
+          </article>
+        </section>
+        <!--End of contact section-->
+      </main>
+      <!--End of main-->
+
+      <footer>
+        <div class="blue-wave">
+          <img src="images/wave-blue-light.png" alt="Blue wave" />
+        </div>
+        <div class="footer-content">
+          <a href="index.html">
+            <img src="images/logo-white-vulcan.svg" alt="Vulcan logo" /></a>
+
+          <div class="footer-list">
+            <div class="footer-list-row footer-list-row01">
+              <a href="facebook.com">
+                <img src="images/icon-white-facebook.png" alt="Facebook Logo" /></a>
+
+              <a href="linkedin.com">
+                <img src="images/icon-white-linkedin.png" alt="LinkedIn logo" />
+              </a>
+
+              <a href="tel:+17126422755" class="footer-telephone">
+                <img src="images/icons8-phone-96.png" alt="Call image" class='icons'> <span>+1
+                  712-642-2755</span>
+              </a>
+
+              <a href="#0" class="email"><img src="images/icons8-envelope-50.png" alt="Email image" class='icons'>
+                <span>Contact
+                  Us</span></a>
+            </div>
+            <div class="copyright footer-list-row  footer-list-row02">
+              <p>Copyright 2017. All rights reserved</p>
+            </div>
+          </div>
+          <!--End footer list-->
+        </div>
+        <!--End footer content-->
+      </footer>
+      <!--End of footer-->
+    </div>
+    <!--End of wrapper-->
+
+    <!-- *** IMPORTANT *** If you want to add additional JavaScript scripts to your project, then make sure to 
+place the script tags between the build:js comment tags -->
+    <!-- *** IMPORTANT *** DO NOT DELETE OR EDIT THE NEXT FOUR LINES OF CODE - THEY ARE IMPORTANT FOR THE GULP BUILD PROCESS. SEE YOUR INSTRUCTOR FIRST IF YOU WANT TO EDIT OR DELETE THESE LINES -->
+    <!-- build:js scripts/script.min.js -->
+    <script src="scripts/jquery-3.3.1.min.js"></script>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/slideshow.js"></script>
+    <!-- endbuild -->
+  </body>
+
+</html>

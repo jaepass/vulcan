@@ -1,0 +1,36 @@
+.media{
+    background-color: $blue;
+
+    .video{
+        padding: 56.25% 0 0 0;
+        position: relative;
+
+        iframe{
+            position: absolute;
+            margin: 0 auto;
+            border: 10px solid $dark_blue;
+            box-shadow: inset 15px green;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 65%;
+            height: 70%;
+        }
+        
+    }
+
+    @media screen and (min-width: $tabletPortrait){
+        .video{
+            padding: 56.25% 0 0 0;
+            position: relative;
+    
+            iframe{
+                border: 20px solid $dark_blue;
+                width: 65%;
+                margin: 0;
+                height: 67%;
+            }
+            
+        }
+    }
+}

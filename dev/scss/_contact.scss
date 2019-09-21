@@ -1,0 +1,226 @@
+.map-location {
+  display: block;
+  text-align: center;
+
+  article:first-child {
+    background-image: url("../images/map.jpg");
+    background-size: cover;
+    min-height: 320px;
+    position: relative;
+
+    .map {
+      top: 50%;
+      transform: translateY(80%);
+
+      h3 {
+        color: $dark_grey;
+        font-size: 1.75em;
+        padding: 0 50px;
+      }
+
+      button {
+        font-size: 0.9em;
+        font-weight: 700;
+        position: relative;
+        color: $dark_grey;
+        border: 1px solid $dark_grey;
+        background-color: transparent;
+        padding: 10px 10px;
+        margin-top: 15px;
+      }
+
+      button:hover,
+      button:active,
+      button:focus {
+        border: 1px solid $dark_grey;
+        background-color: $dark_grey;
+        color: white;
+      }
+    }
+  }
+
+  article:last-child {
+    background-color: $dark_blue;
+    min-height: 320px;
+    position: relative;
+
+    .location {
+      top: 50%;
+      transform: translateY(50%);
+
+      h3 {
+        color: white;
+        font-size: 1.75em;
+        padding: 0 50px;
+      }
+
+      button {
+        font-size: 0.9em;
+        font-weight: 700;
+        position: relative;
+        color: white;
+        border: 1px solid white;
+        background-color: transparent;
+        padding: 10px 10px;
+        margin-top: 15px;
+      }
+
+      button:hover,
+      button:active,
+      button:focus {
+        border: 1px solid white;
+        background-color: white;
+        color: $dark_grey;
+      }
+    }
+  }
+
+  @media screen and (min-width: $tabletPortrait) {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-direction: wrap;
+    // position: relative;
+
+    article {
+      width: 100%;
+
+      .box {
+        h3 {
+          font-size: 1em;
+          width: 100%;
+        }
+      }
+
+      .map {
+        top: 50%;
+        transform: translateY(-50%);
+      }
+
+      .location {
+        top: -50%;
+      }
+    }
+
+    article:first-child {
+      .map {
+        button {
+          color: white;
+          border: 2px solid $blue;
+          background-color: $blue;
+        }
+      }
+    }
+
+    article:last-child {
+      .location {
+        button {
+          color: white;
+          border: 2px solid $blue;
+          background-color: $blue;
+        }
+
+        button:hover,
+        button:active,
+        button:focus {
+          border: 1px solid $dark_grey;
+          background-color: $dark_grey;
+          color: white;
+        }
+      }
+    }
+  }
+
+  // @media screen and (min-width: $tabletLandscape) {
+    // article {
+      // .map {
+        // position: absolute;
+        // top: 50%;
+        // transform: translateX(-50%);
+      // }
+    // }
+  // }
+
+  @media screen and (min-width: 1200px) {
+
+    article {
+      .map {
+        h3{
+          font-size: 2em;
+        }
+      }
+    }
+    article:last-child {
+  
+        .location {
+          position: relative;
+          top: 10%;
+          // transform: translateY(50%);
+        }
+    }
+  }
+}
+
+// Sign-up form styles
+
+.sign-up {
+  background-color: $light_blue;
+  height: 130px;
+  padding: 10px;
+  font-size: 1em;
+
+  .search-group {
+    text-align: center;
+    margin-top: 20px;
+
+    label {
+      font-weight: 300;
+      font-size: 1em;
+      color: $dark_grey;
+    }
+    input {
+      outline: none;
+      margin-top: 10px;
+      font-size: 0.8em;
+      padding: 10px 14px 10px 14px;
+    }
+
+    input[type="email"] {
+      width: 70%;
+    }
+
+    input[type="submit"] {
+      font-weight: bold;
+      background-color: $blue;
+      color: white;
+    }
+  }
+  @media (min-width: $tabletPortrait) {
+    height: 90px;
+    .search-group {
+      //   padding: 10px;
+
+      label {
+        padding-right: 10px;
+        font-size: 1.2em;
+      }
+      input {
+        padding: 5px 20px 5px 20px;
+        margin-top: 0;
+        font-size: 1em;
+      }
+
+      input[type="email"] {
+        width: 35%;
+      }
+    }
+  }
+
+  @media (min-width: $desktopMedium) {
+    height: 90px;
+    .search-group {
+      input[type="email"] {
+        width: 25%;
+      }
+    }
+  }
+}

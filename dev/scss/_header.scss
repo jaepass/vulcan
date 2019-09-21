@@ -1,0 +1,66 @@
+// Header styles
+header {
+  .header-contents {
+    z-index: 999;
+    width: 100%;
+    margin: 0 auto;
+    background-color: $nav-color;
+    position: absolute;
+    top: 0;
+    left: 0;
+    @include flex-layout-row;
+    color: white;
+    padding: 0 16px;
+    height: 100px;
+    a {
+      text-decoration: none;
+    }
+    h5 {
+      display: none;
+
+      span:hover,
+      span:active,
+      span:focus {
+        cursor: pointer;
+        color: $blue;
+      }
+
+      span i:hover,
+      span i:active,
+      span i:focus {
+        cursor: pointer;
+        color: $blue;
+        background-color: #fff;
+      }
+    }
+
+    @media (min-width: $tabletPortrait) {
+      margin-top: 15px;
+      background-color: transparent;
+      @include flex-layout-row;
+
+      h5 {
+        display: block;
+        font-size: 1em;
+        span {
+          padding: 0 8px;
+        }
+      }
+    }
+
+    @media (min-width: $tabletLandscape) {
+      padding: 0 100px;
+      h5 {
+        font-size: 1.2em;
+      }
+    }
+    @media (min-width: $desktopMedium) {
+      h5 {
+        font-size: 1em;
+        span {
+          padding: 0 15px;
+        }
+      }
+    }
+  }
+}

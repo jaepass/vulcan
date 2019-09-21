@@ -1,0 +1,49 @@
+// Font-awsome icon styles
+.icons {
+  display: inline-block;
+  border-radius: 100%;
+  background-color: #fff;
+  padding: 0.3em 0.4em;
+  max-width: 26px;
+    
+  }
+
+h5 { 
+  display: flex;
+  align-content: center;
+  
+span{
+  display: inline-block;
+    padding: 0;
+    margin: 0;
+    font-size: 1.3em;
+  }
+  
+}
+
+
+footer {
+
+  a {
+    span{
+  display: inline-block;
+    padding: 0;
+    margin: 0;
+    font-size: 1.1em;
+  }
+  
+   
+  .icons {
+   display: inline-block;
+    max-width: 20px;
+  }
+  }
+  
+  @media(min-width: $tabletPortrait){
+    .icons {
+   display: inline-block;
+    max-width: 26px;
+  }
+  }
+
+}
